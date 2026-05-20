@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Preference App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="#4F46E5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- DEVICE CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your device"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="10dp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/ios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="iOS"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/windows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Windows"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- FEATURES CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select App Features"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="10dp" />
+
+            <CheckBox
+                android:id="@+id/notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark Mode"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Services"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloud Backup"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- SUBMIT BUTTON -->
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4F46E5"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- OUTPUT CARDS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp">
+
+            <TextView
+                android:id="@+id/selected_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Device: -"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/selected_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Features: -"
+                android:textSize="16sp"
+                android:textColor="#111827" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
