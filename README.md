@@ -61,7 +61,7 @@
 
 ### Output
 <div style="display:flex">
-<img src="images/Assignment8(1).jpeg" width="300"/>
+<img src="images/Assignment8.jpeg" width="300"/>
 </div>
 ---
 
@@ -78,7 +78,7 @@
 
 ### Output
 <div style="display:flex">
-<img src="images/Screenshot_20260520_103642.jpg" width="300"/>
+<img src="images/Screenshot_20260520_103642.jpg.jpeg" width="300"/>
 </div>
 ---
 
